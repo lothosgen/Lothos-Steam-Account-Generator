@@ -1,0 +1,16 @@
+<project outputDir="C:\Users\Jeremy\source\repos\LothosGenerator Proxy Checker (STEAM)\LothosGenerator Proxy Checker (STEAM)\bin\Debug\Confused" baseDir="C:\Users\Jeremy\source\repos\LothosGenerator Proxy Checker (STEAM)\LothosGenerator Proxy Checker (STEAM)\bin\Debug" xmlns="http://confuser.codeplex.com">
+  <module path="LothosGenerator Proxy Checker (STEAM).exe">
+    <rule pattern="true" preset="maximum" inherit="false">
+      <protection id="anti ildasm" />
+      <protection id="anti tamper" />
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+      <protection id="anti dump" />
+      <protection id="anti debug" />
+      <protection id="invalid metadata" />
+      <protection id="ref proxy" />
+      <protection id="resources" />
+      <protection id="rename" />
+    </rule>
+  </module>
+</project>

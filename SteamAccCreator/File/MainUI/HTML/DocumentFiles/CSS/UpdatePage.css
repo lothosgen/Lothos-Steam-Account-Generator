@@ -1,0 +1,22 @@
+﻿body {
+    background-color: #202020;
+    margin: 0;
+    user-select: none;
+}
+.info {
+    width: 700px;
+    height: fit-content();
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.release {
+    color: #6C757D;
+    position: relative;
+    bottom: 25px;
+}
+
+.update {
+   
+}

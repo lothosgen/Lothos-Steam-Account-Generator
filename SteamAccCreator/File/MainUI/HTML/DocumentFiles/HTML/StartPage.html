@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang=en xmlns=http://www.w3.org/1999/xhtml>
+<head>                            
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="booty">
+    <style>
+        .w3-btn {width:150px;}
+        body {font-family: 'Lato', sans-serif;}       
+    </style>
+    <div class="sidebar" id="sb">
+        <div style="height: 38px;"><button class="bH" style="outline: none; background-color: transparent; border: none; color: greenyellow; font-size: 22px; cursor: pointer;" id="btn_updates" onclick="buttonHandler_updates(); PageEnablerChange('UpdatesEnabled');" name="false"><i class="fa fa-fw fa-rotate-left bH" name="false"></i> Updates</button> <div class="bubble" id="UpdatesEnabled" name="UpdatesEnabledn" value="true" style="background: rgb(66, 244, 89);"></div></div>
+        <div style="height: 38px;"><button class="bH" style="outline: none; background-color: transparent; border: none; color: orangered; font-size: 22px; cursor: pointer;" id="btn_dashboard" onclick="buttonHandler_dashboard(); PageEnablerChange('HomeEnabled');" name="false"><i class="fa fa-fw fa-home bH" name="false"></i> Genned</button> <div class="bubble" id="HomeEnabled" name="HomeEnabledn" value="false"></div></div>
+        <div style="height: 38px;"><button class="bH" style="outline: none; background-color: transparent; border: none; color: orange; font-size: 22px; cursor: pointer;" id="btn_history" onclick="buttonHandler_history(); PageEnablerChange('HistoryEnabled');" name="false"><i class="fa fa-fw fa-history bH" name="false"></i> History</button> <div class="bubble" id="HistoryEnabled" name="HistoryEnabledn" value="false"></div></div>
+        <div style="height: 38px;"><button class="bH" style="outline: none; background-color: transparent; border: none; color: cornflowerblue; font-size: 22px; cursor: pointer;" id="btn_proxy" onclick="buttonHandler_proxy(); PageEnablerChange('ProxyEnabled');" name="false"><i class="fa fa-fw fa-globe bH" name="false"></i> Proxy</button> <div class="bubble" id="ProxyEnabled" name="ProxyEnabledn" value="false"></div></div>
+        <div style="height: 38px;"><button class="bH" style="outline: none; background-color: transparent; border: none; color: slateblue; font-size: 22px; cursor: pointer;" id="btn_settings" onclick="buttonHandler_settings(); PageEnablerChange('SettingsEnabled');" name="false"><i class="fa fa-fw fa-info-circle bH" name="false"></i> About</button> <div class="bubble" id="SettingsEnabled" name="SettingsEnabledn" value="false"></div></div>
+    </div>
+    <div class="con" name="Options" id="cons">
+        <div class="chkbutton-group">
+            <!--- <button id="chk_auto" class="chk_disabled" onclick="chkbuttonClick(this.id);" name="false" ><b>Auto</b></button> --->
+            <button id="chk_steamguard" onclick="chkbuttonClick(this.id);" name="false"><b>Disable SteamGuard</b></button>
+            <button id="chk_proxy" onclick="chkbuttonClick(this.id);" name="false"><b>Use Proxy</b></button>
+            <button id="chk_TwoCaptcha" onclick="chkbuttonClick(this.id);" name="false"><b>2Captcha</b></button>
+            <button id="chk_CaptchaSolutions" onclick="chkbuttonClick(this.id);" name="false"><b>CaptchaSolutions</b></button>
+            <button id="chk_gameadd" onclick="chkbuttonClick(this.id);" name="false"><b>Game Add</b></button>
+            <!--- <button id="chk_retry" value="disabled" onclick="chkbuttonClick(this.id);" name="false" ><b>Retry</b></button> --->
+        </div>
+        <div class="creds">
+            <img class="logo" src="https://i.imgur.com/bkDtMjl.png" /><b style="color: white; position: relative; font-size: 25px; right: -10px; bottom: -105px; ">LothosGen</b>
+            <b style="color: #484848;position: relative;bottom: -90px;bottom: -130px;right: 95px;font-size: 15px;"> by Champ</b>
+            <b style="color: #484848;position: relative;bottom: -90px;bottom: -100px;right: -135px;font-size: 15px;"> Agent</b>
+        </div>
+        <div class="conButtons">
+            <button id="btn_generate" name="false" onclick="buttonHandler_generate(this.id);" class="cusbutton cusradius"><b style="position: relative; bottom: 3px; left: -1px; ">Generate</b></button>
+            <button id="btn_option" name="false" onclick="buttonHandler_generate(this.id);" class="cusbuttonP cusradius"><b style="position: relative; bottom: 3px; left: -1px; ">Option Settings</b></button>
+        </div>
+    </div>
+    <div id="idGenerate" name="false"></div>
+</body>
+</html>
